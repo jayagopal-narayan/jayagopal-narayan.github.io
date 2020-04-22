@@ -1,42 +1,26 @@
 <!-- <html __fvdsurfcanyoninserted="1" class=" clickberry-extension clickberry-extension-standalone clickberry-extension clickberry-extension-standalone clickberry-extension clickberry-extension-standalone"><head> -->
 <!DOCTYPE html>
 <html lang="en">
-        <meta charset="UTF-8">
+    <meta charset="UTF-8">
+      <head>
+
         <script src="./script/lib/d3.v3.min.js" charset="utf-8"></script>
         <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="./css/lib/bootstrap.min.css">
+        <link rel="stylesheet" href="./css/lib/bootstrap/bootstrap.min.css">
         <link rel="stylesheet" href="./css/style.css" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="./css/birthday.css" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="./css/d3-image.css" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="./css/count-down.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="./css/slider.css" rel="stylesheet" type="text/css">
         <title>Happy Birthday</title>
 
-        <script>
-            window.open = function() {};
-            window.print = function() {};
-            // Support hover state for mobile.
-            if (false) {
-                window.ontouchstart = function() {};
-            }
-        </script>
-        <!-- <script type="text/javascript" src="chrome-extension://bfbmjmiodbnnpllbbbfblcplfjjepjdn/js/injected.js"></script> -->
-        <!-- <meta content="clickberry-extension-here">
-        <meta content="clickberry-extension-here">
-        <style type="text/css"></style>
-        <style type="text/css"></style>
-        <style type="text/css"></style>
-        <style type="text/css"></style> -->
-        <!-- <script type="text/javascript" src="chrome-extension://bfbmjmiodbnnpllbbbfblcplfjjepjdn/js/injected.js"></script> -->
-        <!-- <meta content="clickberry-extension-here"> -->
       </head>
 
     <body>
-        <!-- <link href="https://fonts.googleapis.com/css?family=Wendy+One" rel="stylesheet" type="text/css"> -->
         <iframe src=./vor/index.html></iframe>
 
         <div class="container" id="container">
 
-            <!-- <h1>Feliz Cumpleaños Pratik!</h1> -->
             <span><h2 class="bday-hbd"><span>Happy Birthday</span></h2></span>
             <span class="bday-wish">🎉</span>
             <div class="candle">
@@ -64,40 +48,6 @@
                 <div><span>I</span>
                 </div>
             </div>
-            <!-- <div class="row balloon">
-                <div><span>B</span>
-                </div>
-                <div><span>D</span>
-                </div>
-                <div><span>A</span>
-                </div>
-                <div><span>Y</span>
-                </div>
-            </div> -->
-            <!-- <div class="row balloon">
-                <div><span>P</span>
-                </div>
-                <div><span>R</span>
-                </div>
-                <div><span>A</span>
-                </div>
-                <div><span>G</span>
-                </div>
-                <div><span>A</span>
-                </div>
-                <div><span>T</span>
-                </div>
-                <div><span>I</span>
-                </div>
-            </div> -->
-            <!-- <div class="row balloon">
-                <div><span>☺</span>
-                </div>
-                <div><span>☺</span>
-                </div>
-                <div><span>☺</span>
-                </div>
-            </div> -->
 
             <div class="break-default"></div>
 
@@ -134,39 +84,42 @@
 
             <div class="break-default"></div> -->
 
-            <form>
-              <div class="form-group">
-                <!-- <label for="email" class="text-default">Email</label> -->
+            <form id="wishes-form">
+              <!-- <div class="form-group">
                 <input type="email" class="form-control" id="email" placeholder="Email">
+              </div> -->
+              <div class="form-group">
+                <input type="text" class="form-control" name="name" id="form-name" placeholder="Name">
               </div>
               <div class="form-group">
-                <!-- <label for="name" class="text-default">Name</label> -->
-                <input type="text" class="form-control" id="name" placeholder="Name">
+                <textarea class="form-control" name="message" id="form-message" rows="3" placeholder="Make your wish to PRAGATI ☺ ☺ ☺"></textarea>
               </div>
-              <div class="form-group">
-                <!-- <label for="wish" class="text-default">Make your wish to PRAGATI ☺ ☺ ☺</label> -->
-                <textarea class="form-control" id="wish" rows="3" placeholder="Make your wish to PRAGATI ☺ ☺ ☺"></textarea>
-              </div>
-              <button type="submit" class="btn btn-success float-right">Send</button>
+              <!-- <button type="submit" class="btn btn-success float-right">Send</button> -->
+              <button type="button" class="btn btn-success float-right" onclick="shareWish()">Send</button>
             </form>
 
-            <div class="break-default"></div>
+            <!-- <div class="break-default"></div>
 
             <div class="header-default">Wishes!!!</div>
 
-            <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img class="d-block w-100" src="./sample.png" alt="First slide">
-                </div>
-                <div class="carousel-item">
-                  <img class="d-block w-100" src="./sample.png" alt="Second slide">
-                </div>
-                <div class="carousel-item">
-                  <img class="d-block w-100" src="./sample.png" alt="Third slide">
+            <div id="add-wishes">
+                <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner wishes-inner-default">
+                  <div class="carousel-item wishes-parent-default active">
+                    <p class="wishes-content-default">Wish you happy birthday</p>
+                    <h3 class="wishes-name-default">name<h3>
+                  </div>
+                  <div class="carousel-item wishes-parent-default">
+                    <p class="wishes-content-default">Wish you happy birthday</p>
+                    <h3 class="wishes-name-default">name<h3>
+                  </div>
+                  <div class="carousel-item wishes-parent-default">
+                    <p class="wishes-content-default">Wish you happy birthday</p>
+                    <h3 class="wishes-name-default">name<h3>
+                  </div>
                 </div>
               </div>
-            </div>
+            </div> -->
 
             <div class="break-default"></div>
 
@@ -178,7 +131,7 @@
                   <img class="card-img-top card-image-default" src="./images/card/1.jpeg" alt="Card image cap">
                   <div class="card-body card-body-default">
                     <!-- <h5 class="card-title card-title-default">Special title treatment</h5> -->
-                    <p class="card-text card-content-default">My one month old pragati kutty😘24.5.2019... Milestone photo...</p>
+                    <p class="card-text card-content-default">Babies are like magic to bring happiness and light into our lives.♥️ Yes it's been one month, this cute little, beautiful foot has come into our lives😍 Exactly a month ago,our pricess was born😍 As a mother learning so many things.. infact every day, every minute is a lesson ... and we have new things to learn. Slowly adjusting to this world and to this new journey ♥️</p>
                   </div>
                 </div>
               </div>
@@ -187,13 +140,10 @@
                   <img class="card-img-top card-image-default" src="./images/card/2.jpeg" alt="Card image cap">
                   <div class="card-body card-body-default">
                     <!-- <h5 class="card-title card-title-default">Two month of watching my little miracle</h5> -->
-                    <p class="card-text card-content-default">✌🏻month was a hard month in a lot of ways, but also a rewarding one.  I have learned soo much about her.. A big discovery was realizing that my strong letdown while nursing her..It pained me to see her so uncomfortable!!!  so many tears.. "How is she sleeping?" everyone asks...     And truth be told, having colic problem to made her sleep is a big challenge!!
-Twomonth old baby's mom story🥰</p>
+                    <p class="card-text card-content-default">✌🏻month was a hard month in a lot of ways, but also a rewarding one.  I have learned soo much about her.. A big discovery was realizing that my strong letdown while nursing her..It pained me to see her so uncomfortable!!!  so many tears.. "How is she sleeping?" everyone asks...     And truth be told, having colic problem to made her sleep is a big challenge!! Twomonth old baby's mom story🥰</p>
                   </div>
                 </div>
               </div>
-            <!-- </div>
-            <div class="row"> -->
               <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-2 card-col-default">
                 <div class="card card-default">
                   <img class="card-img-top card-image-default" src="./images/card/3.jpeg" alt="Card image cap">
@@ -212,8 +162,6 @@ Twomonth old baby's mom story🥰</p>
                   </div>
                 </div>
               </div>
-            <!-- </div>
-            <div class="row"> -->
               <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-2 card-col-default">
                 <div class="card card-default">
                   <img class="card-img-top card-image-default" src="./images/card/5.jpeg" alt="Card image cap">
@@ -234,8 +182,6 @@ My Lil peanut grow too fast... Soo brought out new cloths👙👗!!Celebrate you
                   </div>
                 </div>
               </div>
-            <!-- </div>
-            <div class="row"> -->
               <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-2 card-col-default">
                 <div class="card card-default">
                   <img class="card-img-top card-image-default" src="./images/card/7.jpeg" alt="Card image cap">
@@ -255,8 +201,6 @@ This month vaccines💉She felt bad health condition never.. fever,cold,pain,tea
                   </div>
                 </div>
               </div>
-            <!-- </div>
-            <div class="row"> -->
               <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-2 card-col-default">
                 <div class="card card-default">
                   <img class="card-img-top card-image-default" src="./images/card/9.jpeg" alt="Card image cap">
@@ -271,18 +215,16 @@ This month vaccines💉She felt bad health condition never.. fever,cold,pain,tea
                   <img class="card-img-top card-image-default" src="./images/card/10.jpeg" alt="Card image cap">
                   <div class="card-body card-body-default">
                     <!-- <h5 class="card-title card-title-default"></h5> -->
-                    <p class="card-text card-content-default"></p>
+                    <p class="card-text card-content-default">10 whole month from IN🤰🏻 &OUT🤱🏻 with the beauty.. I truly say the days are long and the years are short..Visiting first time her grandparents home.. She enjoyed and adapt the new surrounding as well..Celebrate 10th month birthday with mama and grandparents.. Lot of new gift from thatha and patti like jewel,dress,bicycle rider... Celebrate dad's birthday💕.. Buy new cooling glass for 300 days celebration😎.. Standing on her own💖😘..Every time take her out with single walk.. She enjoyed each and everyone on her way with that toothless smile😀.. Even I too over enjoying the way she behaving... I can't believe it😍💓</p>
                   </div>
                 </div>
               </div>
-            <!-- </div>
-            <div class="row"> -->
               <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-2 card-col-default">
                 <div class="card card-default">
                   <img class="card-img-top card-image-default" src="./images/card/11.jpeg" alt="Card image cap">
                   <div class="card-body card-body-default">
                     <!-- <h5 class="card-title card-title-default"></h5> -->
-                    <p class="card-text card-content-default"></p>
+                    <p class="card-text card-content-default">This one is literally impossible to get photos of anymore😅😂 she moved and the photo is blurred!! She has started standing by herself (no hands)..climbing stairs..opening all the cupboards..climbing out of chairs &table..and trying to walk(although she doesn't quite have the balance yet) 😍Looks like she will be walking around the house VERY SOON!!! 🙈 ...she eats absolutely everything☺️  she is full on the move , the next time I open the box of month cards it will be 1 year!!!😍</p>
                   </div>
                 </div>
               </div>
@@ -295,31 +237,6 @@ This month vaccines💉She felt bad health condition never.. fever,cold,pain,tea
                   </div>
                 </div>
               </div>
-            </div>
-
-            <div class="row">
-              <!-- <div class="card col-6 card-default">
-                <div class="card-body">
-                  This is some text within a card body.
-                </div>
-              </div>
-                <div class="card col-6 card-default">
-                  <div class="card-body">
-                    This is some text within a card body.
-                  </div>
-                </div> -->
-
-                  <!-- <div class="card col-6 card-default">
-                    <div class="card-body">
-                      This is some text within a card body.
-                    </div>
-                  </div> -->
-              <!-- <article>
-              <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget</p>
-              </article>
-              <article>
-              <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget</p>
-              </article> -->
             </div>
 
             <div class="break-default"></div>
@@ -338,21 +255,28 @@ This month vaccines💉She felt bad health condition never.. fever,cold,pain,tea
 
 
         </div>
-        <script src="./script/count-down.js"></script>
-        <script src="./script/d3-image.js"></script>
         <script>
             if (document.location.search.match(/type=embed/gi)) {
                 window.parent.postMessage('resize', "*");
             }
         </script>
+
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
         <script src="./script/lib/jquery-3.2.1.slim.min.js"></script>
+        <!-- <script src="./script/lib/popper.min.js"></script> -->
+        <script src="./script/lib/bootstrap/bootstrap.min.js"></script>
+
+        <!-- Custom JS -->
+        <script src="./script/count-down.js"></script>
+        <script src="./script/d3-image.js"></script>
+        <!-- <script src="./script/wishes.js"></script> -->
+
+        <!-- DB -->
         <!-- <script src="./db/lib/jquery-2.2.3.min.js"></script> -->
-        <script src="./script/lib/popper.min.js"></script>
-        <script src="./script/lib/bootstrap.min.js"></script>
         <!-- <script src="https://birthday-b8b2.restdb.io/rest/_jsapi.js"></script> -->
-        <!-- <script src="./db/online-post.js"></script> -->
+        <script src="./db/online-post.js"></script>
         <!-- <script src="./db/online-get.js"></script> -->
 
 </body></html>

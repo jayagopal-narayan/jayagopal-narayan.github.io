@@ -21,7 +21,11 @@
     text-align: center;
   }
 
-  #vis > svg:hover {
+  #vis > svg {
     background-color: black;
+  }
+
+  #vis > svg:hover {
+    /* background-color: black; */
   }
 </style>

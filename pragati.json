@@ -32,6 +32,13 @@
       "link": "",
       "img":  "./images/baby/dev/dev4.png",
       "size": 40000
+    },
+    {
+      "hero": "Ayyappa",
+      "name": "",
+      "link": "",
+      "img":  "./images/baby/dev/dev5.png",
+      "size": 40000
     }
   ]
   },
@@ -85,6 +92,13 @@
       "name": "",
       "link": "",
       "img":  "./images/baby/fes/fes7.png",
+      "size": 40000
+    },
+    {
+      "hero": "First Deepam",
+      "name": "",
+      "link": "",
+      "img":  "./images/baby/fes/fes8.png",
       "size": 40000
     }
    ]

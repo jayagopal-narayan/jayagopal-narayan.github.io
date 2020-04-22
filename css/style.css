@@ -421,9 +421,52 @@
     .card-image-default {
       height: 300px;
     }
+
     .card-content-default {
-      max-height: 150px;
+      max-height: 140px;
       overflow-y: auto;
+    }
+
+    #carouselExampleSlidesOnly {
+      background-color: indianred;
+    }
+
+    .wishes-content-default {
+      color: black;
+      text-align: center;
+      margin-top: 20px !important;
+    }
+
+    .wishes-name-default {
+      color: white;
+      text-align: center;
+      position: absolute;
+      bottom: 20px;
+      right: 300px;
+    }
+
+    .wishes-inner-default {
+      height: 150px;
+    }
+
+    .wishes-parent-default {
+      height: 150px;
+    }
+
+    p#wish-success-message {
+      text-align: center;
+      font-size: 30px;
+      color: chartreuse;
+      background-color: black;
+      padding: 10px;
+    }
+
+    p#wish-error-message {
+      text-align: center;
+      font-size: 30px;
+      color: red;
+      background-color: black;
+      padding: 10px;
     }
 
 </style>
