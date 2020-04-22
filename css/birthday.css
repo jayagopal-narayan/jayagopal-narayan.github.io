@@ -1,0 +1,175 @@
+<style>
+@import url('https://fonts.googleapis.com/css?family=Concert+One|Pacifico');
+
+
+body{
+ /* background: linear-gradient(to right, #e2b8f7, #d4bafa, #c7bcfb, #b9befb, #acbff9);
+ cursor: crosshair;
+ perspective: 1000px;
+ transform-style: preserve-3d;
+ font-family: "Pacifico",cursive; */
+}
+
+/* h1 {
+  position: fixed;
+  text-align: center;
+  width: 100%;
+  top: 120px;
+  font-size: 90px;
+  background: -webkit-linear-gradient(0deg, rgba(206,173,252,1) 0%, rgba(163,187,251,1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: 'Concert One', cursive;
+  font-weight: 400;
+  z-index: -1;
+  letter-spacing: 6px;
+} */
+
+.bday-wish {
+  /* position: fixed; */
+  text-align: center;
+  /* width: 100%; */
+  top: 70px;
+  font-size: 70px;
+  margin: 5%;
+}
+
+.bday-hbd {
+  /* position: fixed; */
+  text-align: center;
+  width: 100%;
+  top: 50px;
+  font-size: 90px;
+  /* background: -webkit-linear-gradient(90deg, rgba(233,230,255,1) 0%, rgba(255,255,255,1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
+  z-index: 1;
+  color: deeppink;
+}
+
+
+
+.cake {
+  /* position: relative; */
+  top: 250px;
+  margin: auto;
+  width: 200px;
+  height: 60px;
+  background: #f9fdff;
+  border-radius: 100%;
+  transform: translateZ(100px);
+
+
+  box-shadow:
+    0px 4px 0px #f4f9fd,
+    0px 8px 0px #dba9ff,
+    0px 12px 0px #fec3b3,
+
+    0px 16px 0px #f7f6fb,
+    0px 20px 0px #f7f6fb,
+    0px 24px 0px #f7f6fb,
+    0px 28px 0px #f7f6fb,
+    0px 32px 0px #fea0bb,
+    0px 36px 0px #fea0bb,
+    0px 40px 0px #9cef9d,
+    0px 44px 0px #9cef9d,
+
+    0px 48px 0px #f7f6fb,
+    0px 52px 0px #f7f6fb,
+    0px 56px 0px #f7f6fb,
+    0px 60px 0px #f7f6fb,
+    0px 64px 0px #f7f6fb,
+    0px 68px 0px #dfa5fc,
+    0px 72px 0px #dfa5fc,
+    0px 76px 0px #fafffe,
+    0px 80px 0px #fafffe;
+}
+
+.plate {
+  /* position: absolute; */
+  height: 90px;
+  width: 253px;
+  bottom: -95px;
+  left: 50%;
+  top: 380px;
+  /* margin-left: -150px; */
+  border-radius: 100%;
+  background: radial-gradient(ellipse closest-side at center, rgba(8,199,254,1) 0%, rgba(4,215,242,1) 71%, rgba(2,255,208,1) 100%);
+  box-shadow: 0px 3px 0px #00e2e1, 0px 6px 0px #00d3fb;
+  /* transform: translateZ(80px); */
+  margin: auto;
+}
+
+.candle {
+  /* position: relative; */
+  height: 50px;
+  width: 12px;
+  top: 280px;
+  margin: auto;
+  background: linear-gradient(0deg, rgba(183,244,167,1) 0%, rgba(255,255,255,1) 100%);
+  border-radius: 4px;
+  transform: translateZ(120px);
+}
+
+#flame {
+   position: absolute;
+   z-index: 10;
+}
+
+.lit {
+   background: linear-gradient(to bottom, #FFF6D9, #FBC36C);
+  width: 15px;
+  height: 35px;
+
+
+/*  Info on border radius. http://www.css3.info/preview/rounded-border/ */
+
+  border-top-left-radius: 10px 35px;
+  border-top-right-radius:  10px 35px;
+  border-bottom-right-radius: 10px 10px;
+  border-bottom-left-radius: 10px 10px;
+  top: -34px;
+  margin: auto;
+
+/*   http://www.css3.info/preview/box-shadow/ */
+  box-shadow:
+    0 0 17px 7px rgba(251, 246, 190, 0.71);
+  transform-origin: bottom;
+  animation: flicker 1s ease-in-out alternate infinite;
+}
+
+@keyframes flicker {
+  0% {
+    transform: skewX(5deg);
+    box-shadow:
+    0 0 17px 10px rgba(251, 246, 190, 0.71);
+  }
+
+  25% {
+    transform: skewX(-5deg);
+    box-shadow:
+    0 0 17px 5px rgba(251, 246, 190, 0.71);
+  }
+
+  50% {
+    transform: skewX(10deg);
+    box-shadow:
+    0 0 17px 7px rgba(251, 246, 190, 0.71);
+  }
+
+  75% {
+    transform: skewX(-10deg);
+    box-shadow:
+    0 0 17px 5px rgba(251, 246, 190, 0.71);
+  }
+
+  100% {
+    transform: skewX(5deg);
+    box-shadow:
+    0 0 17px 10px rgba(251, 246, 190, 0.71);
+  }
+}
+}
+
+
+</style>

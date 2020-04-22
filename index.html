@@ -1,5 +1,356 @@
-<html>
-  <body>
-    <p>Hello</p>
-  </body>
-</html>
+<html __fvdsurfcanyoninserted="1" class=" clickberry-extension clickberry-extension-standalone clickberry-extension clickberry-extension-standalone clickberry-extension clickberry-extension-standalone"><head>
+        <meta charset="UTF-8">
+        <script src="./script/lib/d3.v3.min.js" charset="utf-8"></script>
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="./css/lib/bootstrap.min.css">
+        <link rel="stylesheet" href="./css/style.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="./css/birthday.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="./css/d3-image.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="./css/count-down.css" rel="stylesheet" type="text/css">
+        <title>Happy Birthday</title>
+
+        <script>
+            window.open = function() {};
+            window.print = function() {};
+            // Support hover state for mobile.
+            if (false) {
+                window.ontouchstart = function() {};
+            }
+        </script>
+        <!-- <script type="text/javascript" src="chrome-extension://bfbmjmiodbnnpllbbbfblcplfjjepjdn/js/injected.js"></script> -->
+        <meta content="clickberry-extension-here">
+        <meta content="clickberry-extension-here">
+        <style type="text/css"></style>
+        <style type="text/css"></style>
+        <style type="text/css"></style>
+        <style type="text/css"></style>
+        <!-- <script type="text/javascript" src="chrome-extension://bfbmjmiodbnnpllbbbfblcplfjjepjdn/js/injected.js"></script> -->
+        <meta content="clickberry-extension-here">
+      </head>
+
+    <body>
+        <link href="https://fonts.googleapis.com/css?family=Wendy+One" rel="stylesheet" type="text/css">
+        <iframe src=./vor/index.html></iframe>
+
+        <div class="container" id="container">
+
+            <!-- <h1>Feliz Cumpleaños Pratik!</h1> -->
+            <h2 class="bday-hbd">Happy Birthday</h2>
+            <span class="bday-wish">🎉</span>
+            <div class="candle">
+               <div id="flame" class="lit"></div>
+            </div>
+
+            <div class="cake"></div>
+            <div class="plate"></div>
+
+            <div class="break-default"></div>
+
+            <div class="row balloon">
+                <div><span>P</span>
+                </div>
+                <div><span>R</span>
+                </div>
+                <div><span>A</span>
+                </div>
+                <div><span>G</span>
+                </div>
+                <div><span>A</span>
+                </div>
+                <div><span>T</span>
+                </div>
+                <div><span>I</span>
+                </div>
+            </div>
+            <!-- <div class="row balloon">
+                <div><span>B</span>
+                </div>
+                <div><span>D</span>
+                </div>
+                <div><span>A</span>
+                </div>
+                <div><span>Y</span>
+                </div>
+            </div> -->
+            <!-- <div class="row balloon">
+                <div><span>P</span>
+                </div>
+                <div><span>R</span>
+                </div>
+                <div><span>A</span>
+                </div>
+                <div><span>G</span>
+                </div>
+                <div><span>A</span>
+                </div>
+                <div><span>T</span>
+                </div>
+                <div><span>I</span>
+                </div>
+            </div> -->
+            <!-- <div class="row balloon">
+                <div><span>☺</span>
+                </div>
+                <div><span>☺</span>
+                </div>
+                <div><span>☺</span>
+                </div>
+            </div> -->
+
+            <div class="break-default"></div>
+
+            <div class="header-default">Remaining</div>
+            <div class="count-down">
+              <div class="days">
+                <div class="number">0</div>
+                <div class="label">Days</div>
+              </div>
+
+              <div class="hours">
+                <div class="number">0</div>
+                <div class="label">Hours</div>
+              </div>
+
+              <div class="minutes">
+                <div class="number">0</div>
+                <div class="label">Minutes</div>
+              </div>
+
+              <div class="seconds">
+                <div class="number">0</div>
+                <div class="label">Seconds</div>
+              </div>
+            </div>
+
+            <div class="break-default"></div>
+
+            <!-- <h1 class="bday-name">PRAGATI</h1>
+
+            <div class="break-default"></div> -->
+
+            <!-- <h1 class="bday-date">24-04-2020</h1>
+
+            <div class="break-default"></div> -->
+
+            <form>
+              <div class="form-group">
+                <!-- <label for="email" class="text-default">Email</label> -->
+                <input type="email" class="form-control" id="email" placeholder="Email">
+              </div>
+              <div class="form-group">
+                <!-- <label for="name" class="text-default">Name</label> -->
+                <input type="text" class="form-control" id="name" placeholder="Name">
+              </div>
+              <div class="form-group">
+                <!-- <label for="wish" class="text-default">Make your wish to PRAGATI ☺ ☺ ☺</label> -->
+                <textarea class="form-control" id="wish" rows="3" placeholder="Make your wish to PRAGATI ☺ ☺ ☺"></textarea>
+              </div>
+              <button type="submit" class="btn btn-success float-right">Send</button>
+            </form>
+
+            <div class="break-default"></div>
+
+            <div class="header-default">Wishes!!!</div>
+
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img class="d-block w-100" src="./sample.png" alt="First slide">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="./sample.png" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="./sample.png" alt="Third slide">
+                </div>
+              </div>
+            </div>
+
+            <div class="break-default"></div>
+
+            <div class="header-default">Mom Stories</div>
+
+            <div class="row">
+              <div class="col-6 card-col-default">
+                <div class="card card-default">
+                  <img class="card-img-top card-image-default" src="./images/card/1.jpeg" alt="Card image cap">
+                  <div class="card-body card-body-default">
+                    <!-- <h5 class="card-title card-title-default">Special title treatment</h5> -->
+                    <p class="card-text card-content-default">My one month old pragati kutty😘24.5.2019... Milestone photo...</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 card-col-default">
+                <div class="card card-default">
+                  <img class="card-img-top card-image-default" src="./images/card/2.jpeg" alt="Card image cap">
+                  <div class="card-body card-body-default">
+                    <!-- <h5 class="card-title card-title-default">Two month of watching my little miracle</h5> -->
+                    <p class="card-text card-content-default">✌🏻month was a hard month in a lot of ways, but also a rewarding one.  I have learned soo much about her.. A big discovery was realizing that my strong letdown while nursing her..It pained me to see her so uncomfortable!!!  so many tears.. "How is she sleeping?" everyone asks...     And truth be told, having colic problem to made her sleep is a big challenge!!
+Twomonth old baby's mom story🥰</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-6 card-col-default">
+                <div class="card card-default">
+                  <img class="card-img-top card-image-default" src="./images/card/3.jpeg" alt="Card image cap">
+                  <div class="card-body card-body-default">
+                    <!-- <h5 class="card-title card-title-default">Oh hey My kung-fu-panda three month old🐼🥰</h5> -->
+                    <p class="card-text card-content-default">Third month growing with happiness, blessings,love and care... Doesn't get much better than a precious moment in my life my littledoll "Naming and cradle ceremony"... Tiny human win's the race💞</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 card-col-default">
+                <div class="card card-default">
+                  <img class="card-img-top card-image-default" src="./images/card/4.jpeg" alt="Card image cap">
+                  <div class="card-body card-body-default">
+                    <!-- <h5 class="card-title card-title-default">Lil peanut reach his FOUR MOUTH😘🤩... Ur LUCKY charm👸🏻😘😍</h5> -->
+                    <p class="card-text card-content-default">F O U R M O N T H.... My lucky charm did some wonders in ur lifeline.. it like magic🌈😉.. We celebrate 100th day celebration💯.. First independent day🇨🇮.. First temple visit🌋... First Krishna jayathi... Dressup like goddess.. Nonstop playing, crawling, love to sit with support.. Adapting his new world🌏 very well... Greatest addition to our family🎯</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-6 card-col-default">
+                <div class="card card-default">
+                  <img class="card-img-top card-image-default" src="./images/card/5.jpeg" alt="Card image cap">
+                  <div class="card-body card-body-default">
+                    <!-- <h5 class="card-title card-title-default">F.I.V.E M.O.N.T.H....😱😱😱</h5> -->
+                    <p class="card-text card-content-default">🖐 month🤩
+This was the month of putting all the things in her mouth..she have extraordinary grabbing skill😴
+My Lil peanut grow too fast... Soo brought out new cloths👙👗!!Celebrate your anniversary🍹.... She got gift from daddy (till date her fav toy ) toy name is jukku..150 days celebration🍫 .. Gave a apple purée (first tastes of solid food).. Sitting up on her own🥶... Sometime I wonder where my lil baby went!!! 😱... She slept all night🤱🏻 ..happy mom😘</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 card-col-default">
+                <div class="card card-default">
+                  <img class="card-img-top card-image-default" src="./images/card/6.jpeg" alt="Card image cap">
+                  <div class="card-body card-body-default">
+                    <!-- <h5 class="card-title card-title-default">✨ 🅢🅘🅧 🅜🅞🅝🅣🅗🅢 ✨ HALF BIRTHDAY🍰</h5> -->
+                    <p class="card-text card-content-default">Our Sweet little girl is six month old..so we decided to  celebrate✨half birthday with half cake🍰 she s super exited to mash the cake😄she is spending more time in walker🛴introduced some solid foods this month between steamed carrots🥕and potato🥔(it was only fitting)😁 She started smile to everyone around her😃😃!!Went to visit navatri golu 🎎🎏(like color toys)!Celebrate✨Mybirthday🎂..Went parkride🏞evening regularly with grand(pa&ma), she loved being outside🏝..the past 6 months have been such a blessing 💝but I’m so excited for the next 6 months as she learns to talk, walk,eat!..So many exciting things ahead 💞and not wanting to miss.. even a single thing about her🤗🤗</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-6 card-col-default">
+                <div class="card card-default">
+                  <img class="card-img-top card-image-default" src="./images/card/7.jpeg" alt="Card image cap">
+                  <div class="card-body card-body-default">
+                    <!-- <h5 class="card-title card-title-default">Seven months</h5> -->
+                    <p class="card-text card-content-default">Seven month... that mum life holding baby in one hand and trying to eat with the other 😅 who else can relate🙋🏻😴 she loved to had a finger foods like biscuits🥖,boiled veg🥔🌽,fruits🍌.! Celebrating first diwali🎆... Buying new toys🎎🎏 She said amma,appa,thatha, ayya, aththa, akka..she got so excited to see her cousins👯, my heart actually melted..she really loves seeing other babies and young kids,just wants to play/touch their face or pull their clothes! It’s so amazing to watch her personality development!!</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 card-col-default">
+                <div class="card card-default">
+                  <img class="card-img-top card-image-default" src="./images/card/8.jpeg" alt="Card image cap">
+                  <div class="card-body card-body-default">
+                    <!-- <h5 class="card-title card-title-default">Eight months</h5> -->
+                    <p class="card-text card-content-default">A "happy baby" pose for 8month old Taking pictures of an 8month old is not an easy job😅..Try some winter dress (cute baby look)👶🏻 trying new hairstyle😜 she started standing with support..She try to "kiss" herself in the mirror😆... Started belly laughing😀 clap on his own👏🏻👏🏻 !!!
+This month vaccines💉She felt bad health condition never.. fever,cold,pain,tears.... Hard to handle my Lil😙  frequently visiting his doctor uncle🤥🤒..celebrate first deepam.. She enjoyed with lights🎇 in the street.. Finally my baby cuteness overloaded this month😍😘🤗</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-6 card-col-default">
+                <div class="card card-default">
+                  <img class="card-img-top card-image-default" src="./images/card/9.jpeg" alt="Card image cap">
+                  <div class="card-body card-body-default">
+                    <!-- <h5 class="card-title card-title-default">Nine months</h5> -->
+                    <p class="card-text card-content-default">Happiest nine months of my life💖..Pragati has advanced so much in this last month..Crawling,running in her walker and exploring everything within her reach...Everyday she managed to break the water pipe under washbasin,then only i realize.. She is getting strong day by day.. Celebrate Christmas, New year, Pongal... Shopping.. lot of new dresses... Buy new baby ponda rider toy (enjoyed)..keep you safe from all trouble you did everyday🤗😘..Nothing is stronger than mother's love❤!! Love you my miracle😍</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 card-col-default">
+                <div class="card card-default">
+                  <img class="card-img-top card-image-default" src="./images/card/10.jpeg" alt="Card image cap">
+                  <div class="card-body card-body-default">
+                    <!-- <h5 class="card-title card-title-default"></h5> -->
+                    <p class="card-text card-content-default"></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-6 card-col-default">
+                <div class="card card-default">
+                  <img class="card-img-top card-image-default" src="./images/card/11.jpeg" alt="Card image cap">
+                  <div class="card-body card-body-default">
+                    <!-- <h5 class="card-title card-title-default"></h5> -->
+                    <p class="card-text card-content-default"></p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 card-col-default">
+                <div class="card card-default">
+                  <img class="card-img-top card-image-default" src="./images/card/12.jpeg" alt="Card image cap">
+                  <div class="card-body card-body-default">
+                    <!-- <h5 class="card-title card-title-default"></h5> -->
+                    <p class="card-text card-content-default"></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <!-- <div class="card col-6 card-default">
+                <div class="card-body">
+                  This is some text within a card body.
+                </div>
+              </div>
+                <div class="card col-6 card-default">
+                  <div class="card-body">
+                    This is some text within a card body.
+                  </div>
+                </div> -->
+
+                  <!-- <div class="card col-6 card-default">
+                    <div class="card-body">
+                      This is some text within a card body.
+                    </div>
+                  </div> -->
+              <!-- <article>
+              <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget</p>
+              </article>
+              <article>
+              <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget</p>
+              </article> -->
+            </div>
+
+            <div class="break-default"></div>
+
+            <div class="header-default">Sweet Memories</div>
+
+            <div class="row d3-default">
+              <!-- <header class="d3-heading-default">
+                <h1>Marvel Characters</h1>
+                <h2>Click to view their identity</h2>
+                <h3>And link to their web page!</h3>
+              </header> -->
+              <!-- container for force layout visualisation  -->
+              <section id="vis"></section>
+            </div>
+
+
+        </div>
+        <script src="./script/count-down.js"></script>
+        <script src="./script/d3-image.js"></script>
+        <script>
+            if (document.location.search.match(/type=embed/gi)) {
+                window.parent.postMessage('resize', "*");
+            }
+        </script>
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="./script/lib/jquery-3.2.1.slim.min.js"></script>
+        <script src="./db/lib/jquery-2.2.3.min.js"></script>
+        <script src="./script/lib/popper.min.js"></script>
+        <script src="./script/lib/bootstrap.min.js"></script>
+        <!-- <script src="https://birthday-b8b2.restdb.io/rest/_jsapi.js"></script> -->
+        <!-- <script src="./db/online-post.js"></script> -->
+        <!-- <script src="./db/online-get.js"></script> -->
+
+</body></html>

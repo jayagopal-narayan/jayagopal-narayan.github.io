@@ -1,0 +1,173 @@
+{
+ "name": "Pragati",
+ "img": "./images/baby/chm.png",
+ "children": [
+  {
+   "name": "Holistic",
+   "children": [
+    {
+      "hero": "Spider-Man",
+      "name": "Peter Benjamin Parker",
+      "link": "http://marvel.com/characters/54/spider-man",
+      "img":  "./images/baby/dev/dev1.png",
+      "size": 40000
+    },
+    {
+      "hero": "CAPTAIN MARVEL",
+      "name": "Carol Danvers",
+      "link": "http://marvel.com/characters/9/captain_marvel",
+      "img":  "./images/baby/dev/dev2.png",
+      "size": 40000
+    },
+    {
+      "hero": "HULK",
+      "name": "Robert Bruce Banner",
+      "link": "http://marvel.com/characters/25/hulk",
+      "img":  "./images/baby/dev/dev3.png",
+      "size": 40000
+    },
+    {
+      "hero": "Black Widow",
+      "name": "Natalia 'Natasha' Alianovna Romanova",
+      "link": "http://marvel.com/characters/6/black_widow",
+      "img":  "./images/baby/dev/dev4.png",
+      "size": 40000
+    }
+  ]
+  },
+  {
+   "name": "Festivals",
+   "children": [
+    {
+      "hero": "Dr. Doom",
+      "name": "Victor von Doom",
+      "link": "http://marvel.com/characters/13/dr_doom",
+      "img":  "./images/baby/fes/fes1.png",
+      "size": 40000
+    },
+    {
+      "hero": "Mystique",
+      "name": "Unrevealed",
+      "link": "http://marvel.com/characters/1552/mystique",
+      "img":  "./images/baby/fes/fes2.png",
+      "size": 40000
+    },
+    {
+      "hero": "Red Skull",
+      "name": "Johann Shmidt",
+      "link": "http://marvel.com/characters/1901/red_skull",
+      "img":  "./images/baby/fes/fes3.png",
+      "size": 40000
+    },
+    {
+      "hero": "Ronan",
+      "name": "Ronan",
+      "link": "http://marvel.com/characters/49/ronan",
+      "img":  "./images/baby/fes/fes4.png",
+      "size": 40000
+    },
+    {
+      "hero": "Magneto",
+      "name": "Max Eisenhardt",
+      "link": "http://marvel.com/characters/35/magneto",
+      "img":  "./images/baby/fes/fes5.png",
+      "size": 40000
+    },
+    {
+      "hero": "Thanos",
+      "name": "Thanos",
+      "link": "http://marvel.com/characters/58/thanos",
+      "img":  "./images/baby/fes/fes6.png",
+      "size": 40000
+    },
+    {
+      "hero": "Black Cat",
+      "name": "Felicia Hardy",
+      "link": "http://marvel.com/characters/271/black_cat",
+      "img":  "./images/baby/fes/fes7.png",
+      "size": 40000
+    }
+   ]
+  },
+   {
+    "name": "Family",
+    "children": [
+     {
+       "hero": "Spider-Man",
+       "name": "Peter Benjamin Parker",
+       "link": "http://marvel.com/characters/54/spider-man",
+       "img":  "./images/baby/fam/fam1.png",
+       "size": 40000
+     },
+     {
+       "hero": "CAPTAIN MARVEL",
+       "name": "Carol Danvers",
+       "link": "http://marvel.com/characters/9/captain_marvel",
+       "img":  "./images/baby/fam/fam2.png",
+       "size": 40000
+     },
+     {
+       "hero": "HULK",
+       "name": "Robert Bruce Banner",
+       "link": "http://marvel.com/characters/25/hulk",
+       "img":  "./images/baby/fam/fam3.png",
+       "size": 40000
+     }
+   ]
+   },
+  {
+   "name": "Moments",
+   "children": [
+    {
+      "hero": "Avengers",
+      "name": "",
+      "link": "http://marvel.com/characters/68/avengers",
+      "img":  "./images/baby/mov/mov1.png",
+      "size": 40000
+    },
+    {
+      "hero": "Guardians of the Galaxy",
+      "name": "",
+      "link": "http://marvel.com/characters/70/guardians_of_the_galaxy",
+      "img":  "./images/baby/mov/mov2.png",
+      "size": 40000
+    },
+    {
+      "hero": "Defenders",
+      "name": "",
+      "link": "http://marvel.com/characters/534/defenders",
+      "img":  "./images/baby/mov/mov3.png",
+      "size": 40000
+    },
+    {
+      "hero": "X-Men",
+      "name": "",
+      "link": "http://marvel.com/characters/71/x-men",
+      "img":  "./images/baby/mov/mov4.png",
+      "size": 40000
+    },
+    {
+      "hero": "Fantastic Four",
+      "name": "",
+      "link": "http://marvel.com/characters/69/fantastic_four",
+      "img":  "./images/baby/mov/mov5.png",
+      "size": 40000
+    },
+    {
+      "hero": "Inhumans",
+      "name": "",
+      "link": "http://marvel.com/characters/1040/inhumans",
+      "img":  "./images/baby/mov/mov6.png",
+      "size": 40000
+    },
+    {
+      "hero": "Inhumans",
+      "name": "",
+      "link": "http://marvel.com/characters/1040/inhumans",
+      "img":  "./images/baby/mov/mov7.png",
+      "size": 40000
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,11 @@
+<style>
+  .count-down {
+    display: grid;
+    text-align: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    text-shadow: 0px 2px 10px black;
+  }
+  .number {
+    font-size: 60px;
+  }
+</style>
