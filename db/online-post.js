@@ -38,6 +38,9 @@ function shareWish() {
 
             document.getElementById("wishes-form").innerHTML = responseError;
         }
+        console.log(xhttp.responseText)
+        console.log(this.status)
+        console.log(this.readyState)
     };
 
     let data = {
@@ -50,5 +53,6 @@ function shareWish() {
     xhttp.open("POST", `https://birthday-b8b2.restdb.io/rest/wishes`, true);
     xhttp.setRequestHeader('Content-Type', 'application/json')
     xhttp.setRequestHeader('x-apikey', '68ec24a2c2494f609ca38d4eb58fcf8eaf26a')
+    // xhttp.setRequestHeader('Access-Control-Allow-Origin', '*')
     xhttp.send(JSON.stringify(data));
 }
