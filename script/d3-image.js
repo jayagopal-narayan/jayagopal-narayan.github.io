@@ -92,7 +92,8 @@ function update() {
         .attr("x", function(d) { return -25;})
         .attr("y", function(d) { return -25;})
         .attr("height", 50)
-        .attr("width", 50);
+        .attr("width", 50)
+        .attr("z-index", 500);
 
   // make the image grow a little on mouse over and add the text details on click
   var setEvents = images
@@ -109,8 +110,9 @@ function update() {
               .transition()
               .attr("x", function(d) { return -60;})
               .attr("y", function(d) { return -60;})
-              .attr("height", 250)
-              .attr("width", 250);
+              .attr("height", 500)
+              .attr("width", 500)
+              .attr("z-index", 1000);
           })
           // set back
           .on( 'mouseleave', function() {
@@ -119,7 +121,8 @@ function update() {
               .attr("x", function(d) { return -25;})
               .attr("y", function(d) { return -25;})
               .attr("height", 50)
-              .attr("width", 50);
+              .attr("width", 50)
+              .attr("z-index", 500);
           });
 
   // Append hero name on roll over next to the node as well
