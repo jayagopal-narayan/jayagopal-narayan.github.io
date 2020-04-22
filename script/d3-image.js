@@ -109,8 +109,8 @@ function update() {
               .transition()
               .attr("x", function(d) { return -60;})
               .attr("y", function(d) { return -60;})
-              .attr("height", 100)
-              .attr("width", 100);
+              .attr("height", 250)
+              .attr("width", 250);
           })
           // set back
           .on( 'mouseleave', function() {
