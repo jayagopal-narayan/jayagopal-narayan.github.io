@@ -53,6 +53,6 @@ function shareWish() {
     xhttp.open("POST", `https://birthday-b8b2.restdb.io/rest/wishes`, true);
     xhttp.setRequestHeader('Content-Type', 'application/json')
     xhttp.setRequestHeader('x-apikey', '68ec24a2c2494f609ca38d4eb58fcf8eaf26a')
-    // xhttp.setRequestHeader('Access-Control-Allow-Origin', '*')
+    xhttp.setRequestHeader('Origin', 'https://jayagopal-narayan.github.io')
     xhttp.send(JSON.stringify(data));
 }
