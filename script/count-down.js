@@ -8,7 +8,7 @@ const second = 1000,
       hour = minute * 60,
       day = hour * 24;
 
-let capodanno = new Date(2020,3,24,9,57,0).getTime();
+let capodanno = new Date(2020,3,24,17,0,0).getTime();
 let timer = setInterval(update, 1000);
 
 function update() {
